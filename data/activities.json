@@ -1,0 +1,24 @@
+[
+  {
+    "activityid": 1,
+    "activityname": "浦发银行信用卡2015“新春奖活动启航”",
+    "activityimage": "http://forbes.comeoncloud.net/img/img.jpg",
+    "time": "2015-02-06 10:00:00",
+    "pv": 1,
+    "signcount": 10,
+    "status": 0,
+    "address": "上海市闸北区万荣路1188号万荣路1188号荣路1188号荣路1188号",
+    "categoryname": "categoryname"
+  },
+  {
+    "activityid": 2,
+    "activityname": "activityname",
+    "activityimage": "http://forbes.comeoncloud.net/img/img.jpg",
+    "time": "2015-02-06 10:00:00",
+    "pv": 1,
+    "signcount": 10,
+    "status": 0,
+    "address": "address",
+    "categoryname": "categoryname"
+  }
+]

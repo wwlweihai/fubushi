@@ -1,0 +1,49 @@
+<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Tabs Example</title>
+    <link rel="stylesheet" href="/fubushi/assets/tools/ionic/css/ionic.css"/>
+    <script src="/fubushi/assets/tools/ionic/js/ionic.bundle.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+<ion-nav-bar class="bar-balanced">
+    <ion-nav-back-button></ion-nav-back-button>
+</ion-nav-bar>
+
+<ion-nav-view style="border: 1px solid red" name="menuContent"></ion-nav-view>
+
+
+<script id="templates/page1.html" type="text/ng-template">
+    <ion-view view-title="{{myTitle}}">
+        <ion-content class="padding">
+            <h1>Page 1</h1>
+            <div class="button button-block button-stable" ui-sref="page2">Go to Page 2</div>
+        </ion-content>
+    </ion-view>
+</script>
+
+<script id="templates/page2.html" type="text/ng-template">
+    <ion-view view-title="{{myTitle}}">
+        <ion-content>
+            <h1>Page 2</h1>
+
+            <div class="button button-block button-stable" ui-sref="page3">Go to Page 3</div>
+        </ion-content>
+    </ion-view>
+</script>
+
+<script id="templates/page3.html" type="text/ng-template">
+    <ion-view view-title="{{myTitle}}">
+        <ion-content>
+            <h1>Page 3</h1>
+
+            <div class="button button-block button-stable" ui-sref="page1">Go to Page 1</div>
+        </ion-content>
+    </ion-view>
+</script>
+</body>
+</html>

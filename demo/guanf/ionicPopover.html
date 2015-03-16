@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/fubushi/assets/tools/ionic/css/ionic.css"/>
+    <script src="/fubushi/assets/tools/ionic/js/ionic.bundle.js"></script>
+    <script src="ionicPopover.js"></script>
+</head>
+<body ng-controller="MyController">
+<p>
+    <button ng-click="openPopover($event)">Open Popover</button>
+</p>
+
+<script id="my-popover.html" type="text/ng-template">
+    <ion-popover-view>
+        <ion-header-bar>
+            <h1 class="title">My Popover Title</h1>
+        </ion-header-bar>
+        <ion-content>
+            Hello!
+        </ion-content>
+    </ion-popover-view>
+</script>
+</body>
+</html>
