@@ -2,12 +2,11 @@
     <div class="licaishi_body">
         <div class="searchHeader">
             <div class="row">
-                <div class="col col-20 category_list" style="position:relative" >
+                <div class="col col-20 category_list" style="position:relative" ng-click="categoryAera = !categoryAera">
                     <i class="iconfont icon-iconfontliebiao"></i>
-                    <div style="position: absolute;z-index: 999;width: 100px;border: 1px solid red;color:blueviolet;background-color: rgba(220, 207, 24, 0.98)">
+                    <div ng-show="categoryAera" style="position: absolute;z-index: 999;width: 100px;color:blueviolet;background-color: rgba(220, 207, 24, 0.98)">
                         <div class="list">
-                            <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-id='category.tagid' req-options = 'lcsListReqOptions' target-datas = 'pageDatas'>
-                               {{category.tagid}}--
+                            <a class="item" style="height:40px;padding:0" ng-repeat="category in pageDatas.categoryList.list" search-by-category category-aera="categoryAera" category-id='category.tagid' req-options = 'lcsListReqOptions' target-datas = 'pageDatas'>
                                {{category.tagname}}
                             </a>
                         </div>

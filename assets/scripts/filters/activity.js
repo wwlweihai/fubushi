@@ -1,10 +1,1 @@
-angular.module('fbs.filters')
-.filter('activityStatusTextFilter',function(){
-  return function(input){
-    var ret;
-    if(input == 0) ret="进行中";
-    if(input == 1) ret="已结束";
-    if(input == 2) ret="满员";
-    return ret;
-  }
-});
+angular.module("fbs.filters").filter("activityStatusTextFilter",function(){return function(input){var ret;return 0==input&&(ret="进行中"),1==input&&(ret="已结束"),2==input&&(ret="满员"),ret}});

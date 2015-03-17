@@ -17,6 +17,30 @@ module.exports = function(grunt) {
                 dest:'assets/styles/all_pages.css'
             }
         },
+        concat: {
+            options: {
+                separator:';'
+            },
+            dist: {
+                src: ['assets/scripts/**/*.js'],
+                dest:'assets/scripts/all_js.js'
+            }
+        },
+        uglify: {
+            options: {
+                report: 'min',
+                mangle: false
+            },
+            build: {
+                files: [{
+                    expand: true,
+                    cwd: 'js',
+                    src: ['**/*.js'],
+                    dest: 'assets/scripts',
+                    ext: '.js'
+                }]
+            }
+        },
         cssmin: {
             target: {
                 files: [{
@@ -57,8 +81,13 @@ module.exports = function(grunt) {
         clean:{
             cssfile:{
                 src:["assets/styles/**.css"]
+            },
+            jsfile:{
+                src:["assets/scripts/**.js"]
             }
+
         }
     });
     grunt.registerTask('cssDeal', ['clean:cssfile','less','concat_css','cssmin']);
+    grunt.registerTask('jsDeal', ['clean:jsfile','uglify','concat']);
 };

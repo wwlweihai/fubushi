@@ -20,8 +20,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <a href="#/wd_add/none">添加问题</a>
+            <div class="add_wd_box">
+                <a href="#/wd_add/none" class="add_wd_btn">添加问题</a>
             </div>
             <div class="list wd_list">
                 <a class="item" ng-repeat="wenda in wendas.list" ng-click="details(wenda.id)">
@@ -48,14 +48,6 @@
                         <div class="wd_details">
                             {{wenda.content}}
                         </div>
-                        <!--<div class="wd_tags">-->
-                            <!--<div class="tag categoryname">-->
-                                <!--刘西洋-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="wd_time">-->
-                            <!--5个小时前-->
-                        <!--</div>-->
                     </div>
                 </a>
             </div>

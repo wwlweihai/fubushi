@@ -5,7 +5,6 @@
 @import "dev/theme";
 .lcs_body{
   .default-page-bg-init;
-
   .lcs_int{
     width: 98%;
     height: 60vh;
@@ -14,23 +13,32 @@
     border: 1px solid @default-line-color;
     background-color: white;
   }
-  .lcs_operats{
-    width: 98%;
-    margin: 0 auto;
-    margin-top: 10px;
-    text-align: center;
-    .operator_btn{
-      width: 80%;
-      margin: auto;
-      padding: 10px;
-      color:white;
-      border-radius: 5px;
-    }
-    .lcs_history{
-      background-color: rgba(75, 165, 255, 0.98);
-    }
-    .lcs_apply{
-      background-color:@theme-color;
-    }
+}
+.lcs_operats{
+  width: 98%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  .test_border;
+  .operator_btn{
+    width: 80%;
+    margin: auto;
+    padding: 10px 20px;
+    color:white;
+    border-radius: 5px;
+  }
+  .row{
+    padding: 0;
+  }
+  .col{
+    .test_border;
+    padding: 0;
+    margin: 0;
+  }
+  .lcs_history{
+    background-color: rgba(75, 165, 255, 0.98);
+  }
+  .lcs_apply{
+    background-color:@theme-color;
   }
 }
